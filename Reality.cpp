@@ -46,3 +46,18 @@ void truth() {
     }
   }
 }
+
+void radically_open_minded_and_transparent() {
+  string input;
+  cout << "In what way could I have been more open minded today?" << endl;
+  getline(cin, input);
+  cout << "What could I do differently tomorrow to be more open minded?" << endl;
+  getline(cin, input);
+
+  cout << "In what way could I have been more transparent today?" << endl;
+  getline(cin, input);
+  cout << "What could I do differently tomorrow to be more transparent?" << endl;
+  getline(cin, input);
+
+
+}
