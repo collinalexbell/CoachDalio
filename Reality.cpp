@@ -2,8 +2,18 @@
 #include <unistd.h>
 #include <vector>
 #include <string>
+#include <chrono>
+#include <thread>
+
 
 using namespace std;
+
+void scroll_print(string content, int chars_per_sec){
+  for(auto it = content.begin(); it != content.end(); it++) {
+     cout << *it << flush;
+     std::this_thread::sleep_for(std::chrono::milliseconds(1000/chars_per_sec));
+   }
+}
 
 void be_a_hyper_realist() {
   string dev_null;
@@ -58,6 +68,31 @@ void radically_open_minded_and_transparent() {
   getline(cin, input);
   cout << "What could I do differently tomorrow to be more transparent?" << endl;
   getline(cin, input);
+}
 
+void look_to_nature() {
+  string intro = "Look to nature, it uses imperfect forms to increase Will to Power through evolution\n";
+  scroll_print(intro, 45);
 
+  string prompt = "What specific evolutionary step can you take tommorrow that synergistically increases will to power for yourself and parent holons?";
+  scroll_print(prompt, 45);
+
+  string input;
+  getline(cin, input);
+}
+
+void game_of_life(){
+  system("cpp-game-of-life/bin/life_term 10");
+}
+
+void evolving_is_lifes_greatest_reward(){
+  string input;
+  string becomming = "Becoming, aka evolving, is life's greatest reward and it occurs in proportion to one's Will to Power";
+  scroll_print(becomming, 45);
+  sleep(1);
+  game_of_life();
+  sleep(1);
+  string prompt = "Write down 1 expiriment you will do tomorrow in an attempt to evolve......\n";
+  scroll_print(prompt, 45);
+  getline(cin, input);
 }

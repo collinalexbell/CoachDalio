@@ -1,0 +1,3 @@
+[submodule "cpp-game-of-life"]
+	path = cpp-game-of-life
+	url = git@github.com:kuberlog/cpp-game-of-life.git
