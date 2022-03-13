@@ -99,10 +99,27 @@ void evolving_is_lifes_greatest_reward(){
 
 void natures_practical_lessons() {
   string input;
-  string intro = "Money & things have diminishing marginal returns but growth does not. Pain (both mental and physical) is what one experiences on the path of growth.";
+  string intro = "Money & things have diminishing marginal returns but growth does not. Pain (both mental and physical) is what one experiences on the path of growth.\n";
   scroll_print(intro, 45);
   sleep(1);
-  string question = "Name a recent time when you experienced pain in the pursuit of growth";
+  string question = "Name a recent time when you experienced pain in the pursuit of growth\n";
   scroll_print(question, 45);
   getline(cin, input);
+}
+
+void pain_reflection_and_progress() {
+  string input;
+  string intro = "Pain + Reflection = Progress\nPain should not be avoided and in fact should be accepted or even sought out because evolving is painful\n";
+
+  scroll_print(intro, 30);
+  sleep(1);
+
+  string question = "What was the largest pain point today?\n";
+  scroll_print(question, 30);
+  getline(cin, input);  
+  sleep(1);
+
+  question = "How did you handle the pain?\n";
+  scroll_print(question, 30);
+  getline(cin, input);  
 }
