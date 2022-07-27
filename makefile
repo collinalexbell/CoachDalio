@@ -1,3 +1,3 @@
 
 all:
-	g++ main.cpp Reality.cpp -o CoachDalio
+	g++ main.cpp -o CoachDalio

@@ -1,25 +1,24 @@
 #include <unistd.h>
-
-void be_a_hyper_realist();
-void truth();
-void radically_open_minded_and_transparent();
-void look_to_nature();
-void evolving_is_lifes_greatest_reward();
-void natures_practical_lessons();
-void pain_reflection_and_progress();
+#include "Reality.h"
 
 int main() {
-  be_a_hyper_realist();
+  Reality reality;
+  reality.be_a_hyper_realist();
   sleep(1);
-  truth();
+  reality.truth();
   sleep(1);
-  radically_open_minded_and_transparent();
+  reality.radically_open_minded_and_transparent();
   sleep(1);
-  look_to_nature();
+  reality.look_to_nature();
   sleep(1);
-  evolving_is_lifes_greatest_reward();
+  reality.evolving_is_lifes_greatest_reward();
   sleep(1);
-  natures_practical_lessons();
+  reality.natures_practical_lessons();
   sleep(1);
-  pain_reflection_and_progress();
+  reality.pain_reflection_and_progress();
+  sleep(1);
+  reality.weigh_second_and_third_order_consequences();
+  sleep(1);
+  reality.own_your_outcomes();
+  sleep(1);
 }
