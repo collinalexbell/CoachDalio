@@ -1,3 +1,3 @@
 
 all:
-	g++ main.cpp -o CoachDalio
+	g++ -std=c++11 main.cpp -o CoachDalio
