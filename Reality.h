@@ -71,7 +71,7 @@ class Reality {
       for(int i=0; i<3; i++) {
         cout << "In what way is " << admirable_people[i] << " a practical realist?" << endl;
         getline(cin, person);
-        sleep(0.5);
+        sleep(1);
       }
       cout << "be a hyper-realist" << endl;
     }
